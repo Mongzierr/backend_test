@@ -96,7 +96,7 @@ apitest.postman.json
 ```
 
 **Expected Response:**  
-201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+201 Created, เข้าสู่ระบบสำเร็จ
 
 #### 11. ทดสอบ POST sellorder
 - **Method:** POST  
@@ -113,7 +113,7 @@ apitest.postman.json
 ```
 
 **Expected Response:**  
-201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+201 Created, เพิ่มรายการขาย
 
 #### 12. ทดสอบ POST buyorder
 - **Method:** POST  
@@ -129,7 +129,7 @@ apitest.postman.json
 ```
 
 **Expected Response:**  
-201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+201 Created, บันทึกรายการซื้อ
 
 #### 13. ทดสอบ POST deposit
 - **Method:** POST  
@@ -145,7 +145,7 @@ apitest.postman.json
 ```
 
 **Expected Response:**  
-201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+201 Created, ฝากเงินาำเร็จ
 
 #### 14. ทดสอบ POST withdraw
 - **Method:** POST  
@@ -161,4 +161,4 @@ apitest.postman.json
 ```
 
 **Expected Response:**  
-201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+201 Created, ถอนเงินสำเร็จ
