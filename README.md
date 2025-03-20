@@ -48,8 +48,28 @@ npm start
 ```
 
 8. ทดสอบ api ด้วย postman โดยจะอยู่ในไฟล์ apitest.postman.json สามารถ import เข้า postman ได้เลย
+ ```ini
+   apitest.postman.json
+   ```
 
-9. ทดสอบ POST Request
+ตัวอย่างจาก postman
+
+9. ทดสอบ POST register
+Method: POST
+URL: /users/register
+
+Body:
+```json
+{
+    "username": "johnsnoop",
+  "email": "test02@example.com",
+  "phone_number": "0123456789",
+  "password": "abcdefghgffdgdfg"
+}
+```
+Expected Response: 201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+
+10. ทดสอบ POST login
 Method: POST
 URL: /users/login
 
@@ -61,4 +81,62 @@ Body:
 }
 ```
 Expected Response: 201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+
+11. ทดสอบ POST sellorder
+Method: POST
+URL: /sellOrders
+
+Body:
+```json
+{
+  "userId": 1,
+  "cryptoId": 1,
+  "amount": 0.1,
+  "fiatAmount": 1000
+}
+```
+Expected Response: 201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+
+12. ทดสอบ POST buyorder
+Method: POST
+URL: /buyOrders
+
+Body:
+```json
+{
+  "buyerId": 2,
+  "sellOrderId": 1,
+  "fiatAmount": 10
+}
+```
+Expected Response: 201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+
+13. ทดสอบ POST deposit
+Method: POST
+URL: /fiat/deposit
+
+Body:
+```json
+{
+    "userId": 2,
+    "amount": 1000,
+    "fiatType": "THB"
+}
+```
+Expected Response: 201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+
+14. ทดสอบ POST withdraw
+Method: POST
+URL: fiat/withdraw
+
+Body:
+```json
+{
+    "userId": 2,
+    "amount": 1000,
+    "fiatType": "USD"
+}
+```
+Expected Response: 201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
+
    
