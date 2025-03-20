@@ -36,12 +36,12 @@ npx prisma migrate dev // ถ้าไม่ได้ให้ใช้ sudo npx
 npm start
 ```
 
-6.รัน Seed ข้อมูล
+6. รัน Seed ข้อมูล
 ```bash
 npm run seed
 ```
 
 7. ตรวจสอบข้อมูล
-8. ```bash
+```bash
 npx prisma studio
 ```
