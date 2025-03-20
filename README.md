@@ -49,13 +49,15 @@ npm start
 
 8. ทดสอบ api ด้วย postman โดยจะอยู่ในไฟล์ apitest.postman.json สามารถ import เข้า postman ได้เลย
 
-9. ทดสอบ api users/register
-    
-   req: ```bash
-   {
-    "username": "johnsnoop",
-  "email": "test02@example.com",
-  "phone_number": "0123456789",
-  "password": "abcdefghgffdgdfg"
-}```
+9. ทดสอบ POST Request
+Method: POST
+URL: /users/login
+Body:
+```json
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+```
+Expected Response: 201 Created, ข้อมูลที่ถูกเพิ่มเข้าไป
    
