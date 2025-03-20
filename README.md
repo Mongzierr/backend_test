@@ -47,10 +47,11 @@ npx prisma studio
 npm start
 ```
 
-7. ทดสอบ api ด้วย postman โดยจะอยู่ในไฟล์ apitest.postman.json สามารถ import เข้า postman ได้เลย
+8. ทดสอบ api ด้วย postman โดยจะอยู่ในไฟล์ apitest.postman.json สามารถ import เข้า postman ได้เลย
 
-8. ทดสอบ api users/register
-   req:```bash
+9. ทดสอบ api users/register
+    
+   req: ```bash
    {
     "username": "johnsnoop",
   "email": "test02@example.com",
