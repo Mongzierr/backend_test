@@ -29,18 +29,32 @@ npm install
 ```bash
 npx prisma migrate dev // ถ้าไม่ได้ให้ใช้ sudo npx
 ```
-5. การรันโปรเจค
+
+
+5. รัน Seed ข้อมูล
+```bash
+npm run seed
+```
+
+6. ตรวจสอบข้อมูล
+```bash
+npx prisma studio
+```
+
+7. การรันโปรเจค
 หลังจากที่ติดตั้งทุกอย่างเรียบร้อยแล้ว คุณสามารถรันโปรเจคโดยใช้คำสั่ง
 ```bash
 npm start
 ```
 
-6. รัน Seed ข้อมูล
-```bash
-npm run seed
-```
+7. ทดสอบ api ด้วย postman โดยจะอยู่ในไฟล์ apitest.postman.json สามารถ import เข้า postman ได้เลย
 
-7. ตรวจสอบข้อมูล
-```bash
-npx prisma studio
-```
+8. ทดสอบ api users/register
+   req:```bash
+   {
+    "username": "johnsnoop",
+  "email": "test02@example.com",
+  "phone_number": "0123456789",
+  "password": "abcdefghgffdgdfg"
+}```
+   
